@@ -49,7 +49,7 @@ var ლ_ಠ益ಠ_ლ = function (msg, err) {
 }
 
 // helper function to load data and store it in the zip
-var delay = total = loaded = 0
+var delay = 0, total = 0, loaded = 0
 var λ = function λ(url, filename, folder) {
     return new Promise(function (fulfill, reject) {
         // first, wait a moment before proceeding (0.2 seconds for each resource)
