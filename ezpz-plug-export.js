@@ -48,6 +48,8 @@ var ლ_ಠ益ಠ_ლ = function (msg, err) {
     }, 500)
 }
 
+var zip
+
 // helper function to load data and store it in the zip
 var delay = 0, total = 0, loaded = 0
 var λ = function λ(url, filename, folder) {
@@ -87,7 +89,7 @@ Promise.all([
     window.define = define_ // restore, now that JSZip is loaded
 
     // create a ZIP to add the exported files to
-    var zip = new JSZip()
+    zip = new JSZip()
 
     // first only load /_/playlists to see if it even works
     // so we don't spam requests if it doesn't work anyways
