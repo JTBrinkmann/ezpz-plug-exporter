@@ -13,7 +13,7 @@ javascript:$.getScript('https://rawgit.com/JTBrinkmann/ezpz-plug-exporter/master
 ```
 
 ### Alternative Way
-1. copy the text form the block above (the one that starts with `javascript:` and ends with `(8)`)
+1. copy the text form the block above (the one that starts with `javascript:`)
 2. go to plug.dj (or a plug.dj testing server)
 3. log in (if not already). You can't export your stuff if you aren't logged it!
 4. click on the address bar (or "URL bar") on the top of your browser and type `javascript:` (remove everything else in the address bar, if necessary)
@@ -22,7 +22,7 @@ javascript:$.getScript('https://rawgit.com/JTBrinkmann/ezpz-plug-exporter/master
 
 
 ## Reasons to use it
-Use this exporter to get a backup *while you can*. Whatever you want to do with the backup later on, you can only do it if you HAVE the backup!
+Use this exporter to get a backup **while you can**. Whatever you want to do with the backup later on, you can only do it if you HAVE the backup!
 
 With the exported data, you can (using other tools):
 * import your songs into Youtube
@@ -34,15 +34,18 @@ With the exported data, you can (using other tools):
 ## Issues
 ### Problem: it opens up a websearch
 you probably didn't do step 4. >_>
+
 Don't try to be outsmart me and just follow the instructions.
 
 ### Problem: security concerns
 If you're wondering what this script does, and whether it might be malicious, just take a short moment and just look at the code (click ezpz-plug-exporter.js in the file-list above). It's very well annotated, so you don't need to be a rocket scientist to see that it doesn't do anything stupid. I just loads a list of resources (your user data, room history, etc, etc) and all of your playlists, bundles them in a ZIP and then downloads the ZIP. No bullshit, just a 1-Click-Download.
 
 ### It doesn't work on Safari / an old Internet Explorer
-You have no-one but yourself to blame, for using these bad browsers. "Safari is bad?" Yes. Yes it is. There's a reason websites like [safari-is-the-new-ie.com](https://www.safari-is-the-new-ie.com/) exist. Safari purposefully doesn't let you download the ZIP that this file creates. The Safari developers are aware of this issue, but they don't even want to fix it.
-*Just try again in a better browser.*
+You have no-one but yourself to blame, for using these bad browsers. "Safari is bad?" Yes. Yes it is. There's a reason websites like [safari-is-the-new-ie.com](https://www.safari-is-the-new-ie.com/) exist. Safari purposefully doesn't let you download the ZIP that this exporter creates. The Safari developers are aware of this issue, but they don't even want to fix it.
+
+**Just try again using a better browser.**
 
 ### plug.dj is currently down, what to do now?
 Too bad. If you can't get on any plug.dj testing server either, there's nothing you can do here, sorry.
+
 If you want to get your playlists back, you may have luck with the [plug.dj RIP playlist exporter](https://p0ne.com/rip-playlist-exporter/), which tries to restore your playlists from your browsers "cache" (technically it's the localStorage, not the cache), success not guaranteed, though.
