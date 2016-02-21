@@ -15,14 +15,14 @@ javascript:$.getScript('https://rawgit.com/JTBrinkmann/ezpz-plug-exporter/master
 ### Alternative Way
 1. copy the text form the block above (the one that starts with `javascript:`)
 2. go to plug.dj (or a plug.dj testing server)
-3. log in (if not already). You can't export your stuff if you aren't logged it!
-4. click on the address bar (or "URL bar") on the top of your browser and type `javascript:` (remove everything else in the address bar, if necessary)
-5. paste in the text that we copied in Step 1. (e.g. press ctrl+v)
+3. log in (if not already). You can't export your stuff if you aren't logged in!
+4. click on the address bar (or "URL bar") at the top of your browser and type `javascript:` (remove everything else in the address bar, if necessary)
+5. paste in the text that you copied in Step 1. (e.g. press ctrl+v)
 6. Hit enter and lean back
 
 
 ## Reasons to use it
-Use this exporter to get a backup **while you can**. Whatever you want to do with the backup later on, you can only do it if you HAVE the backup!
+Use this exporter to get a backup **while you can**. Whatever you want to do with the backup later on, you can only do it if you **actually have** a backup!
 
 With the exported data, you can (using other tools):
 * import your songs into Youtube
@@ -32,7 +32,7 @@ With the exported data, you can (using other tools):
 
 
 ## Issues
-### Problem: it opens up a websearch
+### Problem: it opens up a web search
 you probably didn't do step 4. >_>
 
 Don't try to be outsmart me and just follow the instructions.
@@ -48,4 +48,4 @@ You have no-one but yourself to blame, for using these bad browsers. "Safari is 
 ### plug.dj is currently down, what to do now?
 Too bad. If you can't get on any plug.dj testing server either, there's nothing you can do here, sorry.
 
-If you want to get your playlists back, you may have luck with the [plug.dj RIP playlist exporter](https://p0ne.com/rip-playlist-exporter/), which tries to restore your playlists from your browsers "cache" (technically it's the localStorage, not the cache), success not guaranteed, though.
+If you want to get your playlists back without access to plug.dj, you may have luck with the [plug.dj RIP playlist exporter](https://p0ne.com/rip-playlist-exporter/), which tries to restore your playlists from your browsers "cache" (technically it's the localStorage, not the cache), success not guaranteed, though.
