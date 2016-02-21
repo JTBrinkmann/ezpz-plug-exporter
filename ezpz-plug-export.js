@@ -48,9 +48,9 @@ var ლ_ಠ益ಠ_ლ = function (msg, err) {
     }, 500)
 }
 
-var zip
 
 // helper function to load data and store it in the zip
+var zip
 var delay = 0, total = 0, loaded = 0
 var λ = function λ(url, filename, folder) {
     return new Promise(function (fulfill, reject) {
@@ -100,14 +100,14 @@ Promise.all([
         total = data.data.length + Object.keys(endpoints).length
 
         // export playlists
-        plFolder = zip.folder('playlists')
-        promises = data.data.map(function (pl) {
+        var plFolder = zip.folder('playlists')
+        var promises = data.data.map(function (pl) {
             return λ('playlists/' + pl.id + '/media', pl.name + '.json', plFolder)
         })
 
         // add other files (see `endpoints` at the very top of this file)
-        l = promises.length
-        for (url in endpoints)
+        var l = promises.length
+        for (var url in endpoints)
             promises[l++] = λ(url, endpoints[url])
 
         // promises is a list of so-called "Promises", one for each resource we are loading

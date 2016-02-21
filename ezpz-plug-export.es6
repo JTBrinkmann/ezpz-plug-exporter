@@ -49,6 +49,7 @@ const ლ_ಠ益ಠ_ლ= (msg, err) => {
 }
 
 // helper function to load data and store it in the zip
+let zip
 let delay = total = loaded = 0
 const λ = (url, filename, folder) => new Promise( (fulfill, reject) => {
     // first, wait a moment before proceeding (0.2 seconds for each resource)
@@ -87,7 +88,7 @@ Promise.all([
     window.define = define_ // restore, now that JSZip is loaded
 
     // create a ZIP to add the exported files to
-    let zip = new JSZip()
+    zip = new JSZip()
 
     // first only load /_/playlists to see if it even works
     // so we don't spam requests if it doesn't work anyways
@@ -98,12 +99,12 @@ Promise.all([
         total = data.data.length + Object.keys(endpoints).length
 
         // export playlists
-        plFolder = zip.folder('playlists')
-        promises = data.data.map( pl => λ(`playlists/${pl.id}/media`, `${pl.name}.json`, plFolder) )
+        let plFolder = zip.folder('playlists')
+        let promises = data.data.map( pl => λ(`playlists/${pl.id}/media`, `${pl.name}.json`, plFolder) )
 
         // add other files (see `endpoints` at the very top of this file)
-        l = promises.length
-        for (url in endpoints)
+        let l = promises.length
+        for (let url in endpoints)
             promises[l++] = λ(url, endpoints[url])
 
         // promises is a list of so-called "Promises", one for each resource we are loading
