@@ -38,7 +38,7 @@ you probably didn't do step 4. >_>
 Don't try to be outsmart me and just follow the instructions.
 
 ### Problem: security concerns
-If you're wondering what this script does, and whether it might be malicious, just take a short moment and just look at the code (click ezpz-plug-exporter.js in the file-list above). It's very well annotated, so you don't need to be a rocket scientist to see that it doesn't do anything stupid. I just loads a list of resources (your user data, room history, etc, etc) and all of your playlists, bundles them in a ZIP and then downloads the ZIP. No bullshit, just a 1-Click-Download.
+If you're wondering what this script does, and whether it might be malicious, just take a short moment and just look at the code (click ezpz-plug-exporter.js in the file-list above). It's very well annotated, so you don't need to be a rocket scientist to see that it doesn't do anything stupid. It just loads a list of resources (your user data, room history, etc, etc) and all of your playlists, bundles them in a ZIP and then downloads the ZIP. No bullshit, just a 1-Click-Download.
 
 ### It doesn't work on Safari / an old Internet Explorer
 You have no-one but yourself to blame, for using these bad browsers. "Safari is bad?" Yes. Yes it is. There's a reason websites like [safari-is-the-new-ie.com](https://www.safari-is-the-new-ie.com/) exist. Safari purposefully doesn't let you download the ZIP that this exporter creates. The Safari developers are aware of this issue, but they don't even want to fix it.
