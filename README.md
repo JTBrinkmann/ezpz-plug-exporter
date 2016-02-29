@@ -2,6 +2,7 @@
 export your plug.dj data      
 no bullshit, just a 1-Click-Download
 
+(exports to JSON files, not Youtube or whatever)
 
 ## Usage
 There are two ways to do this, the easy way (using a bookmarklet), and the idiot-proof ("alternative") way.
