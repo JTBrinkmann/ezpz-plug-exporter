@@ -108,7 +108,7 @@ Promise.all([
             promises[l++] = λ(url, endpoints[url])
 
         // promises is a list of so-called "Promises", one for each resource we are loading
-        // the promise will tell us when it's down. We use `Promise.all(promises)`
+        // the promise will tell us when it's done. We use `Promise.all(promises)`
         // to wait for ALL promises to finish
         Promise.all(promises) .then(() => { // finished loading all resources
             // compile the zip and download it
