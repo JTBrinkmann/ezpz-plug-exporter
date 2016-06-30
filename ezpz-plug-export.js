@@ -54,8 +54,7 @@ var zip
 var delay = 0, total = 0, loaded = 0
 var λ = function λ(url, filename, folder) {
     return new Promise(function (fulfill, reject) {
-        // first, wait a moment before proceeding (0.2 seconds for each resource)
-        // my tests indicate the delay isn't even necessary, but better be safe than sorry
+        // first, wait a moment before proceeding (0.5 seconds for each resource)
         setTimeout( function () {
             // load the requested URL from https://plug.dj/_/… or whatever domain we're on
             $.get('/_/' + url, null, null, 'text').then(function (data) {
@@ -71,7 +70,7 @@ var λ = function λ(url, filename, folder) {
             function (_, err) {
                 ლ_ಠ益ಠ_ლ('failed to load /_/' + url + ' (' + filename + ')', err)
             }).then(fulfill, fulfill) // we don't reject ever. KEEP IT MOVING! ಠ_ಠ
-        }, 200 * delay++) // this specifies how long we're waiting before loading
+        }, 500 * delay++) // this specifies how long we're waiting before loading
     })
 }
 
